@@ -27,3 +27,51 @@
     </div>
   </body>
 </html>
+
+<style>
+  .line {
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+path {
+  fill-opacity: 0;
+  stroke: chartreuse;
+  fill: chartreuse;
+  stroke-width: 2;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 4010;
+  animation: animate 7s ease-in-out;
+  
+}
+
+circle {
+  fill-opacity: 1;
+  stroke: chartreuse;
+  fill: chartreuse;
+  stroke-width: 2;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 4010;
+  animation: animate  13.65s ease-in-out;
+  
+}
+
+
+@keyframes animate {
+  0% {
+    stroke-dashoffset: 4010;
+    fill: none;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: chartreuse;
+  }
+}
+svg{
+  margin-top: 25%;
+}
+
+</style>
